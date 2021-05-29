@@ -12,3 +12,5 @@ https://lernantino.github.io/run-buddy/
 
 ## Contribution
 Made with <3 by Colton Watkins
+
+### &copy;2019 Run Buddy, Inc
