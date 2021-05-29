@@ -54,50 +54,43 @@ header nav ul li a {
 }
 
 /* Header end */
-/* Footer */
-
-footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
-footer a {
-    color: #024e76;
-}
-section {
-    padding: 60px;
-}
-
-/* Footer end */
 /* Hero style */
 
 .hero {
     background-image: url(../images/hero-bg.jpg);
-    height: 600px;
+    /* height: 600px; (replaced with flex(box)) */
     background-size: cover;
     background-position: center;
-    position: relative;
+    /* position: relative; (replaced with flex(box)) */
+    /* (the below attributes replace vaious other hero attributes and make the content wrap more smoothly: .hero:height,postion .hero-form:width,position,bottom,right ) */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 .hero-form {
     border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
+    /* width: 500px; (replaced with flex(box)) */
     color: #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 240px;
+    /* position: absolute; (replaced with flex(box)) */
+    /* bottom: 120px; (replaced with flex(box)) */
+    /* right: 240px; (replaced with flex(box)) */
+    width: 40%;
+    margin: 3.5%;
 }
 .hero-form h3 {
     font-size: 24px;
@@ -187,7 +180,7 @@ section {
 }
 
 /* END Consolidation */
-/* 'Steps' Style */
+/* What You Do Style */
 
 .steps div {
     margin-bottom: 80px;
@@ -209,7 +202,7 @@ section {
     font-size: 38px;
 }
 
-/* 'Steps' style END */
+/* What You do style END */
 /* Meet the Trainers style */
 
 .trainers {
@@ -288,3 +281,33 @@ section {
 }
 
 /* 'reach out' style END */
+/* Footer */
+
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+    /* (the below attributes replace vaious other footer attributes and make the content wrap more smoothly: h2:display, div:float) */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer h2 {
+    /* display: inline; (replaced with flex(box)) */
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+footer div {
+    /* float: right; (replaced with flex(box)) */
+    line-height: 1.5;
+    text-align: right;
+}
+footer a {
+    color: #024e76;
+}
+section {
+    padding: 60px;
+}
+
+/* Footer end */
