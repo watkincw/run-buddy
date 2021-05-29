@@ -37,13 +37,20 @@ header nav {
     /* float: right; (replaced with flex(box)) */
     margin: 7px 0;
 }
-header nav ul li {
-    display: inline;
+header nav ul { /* replaced nav ul li */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
+/* header nav ul li { (replaced by nav ul)
+    display: inline;
+} */
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 
 /* Header end */
