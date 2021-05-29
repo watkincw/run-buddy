@@ -10,6 +10,9 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
+.flex-row { /* (replaced vaious other selectors/attributes and made the content wrap more smoothly: .intro, .steps:text-align, .trainers:text-align, .contact:text-align) */
+    display: flex;
+}
 
 /* Body end */
 /* Header */
@@ -122,9 +125,9 @@ header nav ul li a {
 /* Hero style end */
 /* 'What We Do' style */
 
-.intro {
+/* .intro { (replaced with flex(box) in Body styles: .flex-row) 
     text-align: center;
-}
+} */
 
 /* Consolidated w/ .section-title + .primary-border */
 /* .intro h2 {
@@ -142,13 +145,14 @@ header nav ul li a {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* What We Do END */
 /* What You Do style */
 
 .steps {
-    text-align: center;
+    /* text-align: center; (replaced with flex(box) in Body styles: .flex-row) */
     background: #fce138;
 }
 
@@ -167,10 +171,14 @@ header nav ul li a {
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
+    /* margin-bottom: 35px; (replaced with flex(box)) */
+    /* padding: 0 100px 20px 100px; (replaced with flex(box)) */
+    /* display: inline-block; (replaced with flex(box)) */
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 .primary-border {
     border-color: #fce138;
@@ -205,9 +213,9 @@ header nav ul li a {
 /* What You do style END */
 /* Meet the Trainers style */
 
-.trainers {
+/* .trainers { (replaced with flex(box) in Body styles: .flex-row)
     text-align: center;
-}
+} */
 .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
@@ -249,7 +257,7 @@ header nav ul li a {
 
 .contact {
     background-color: #024e76;
-    text-align: center;
+    /* text-align: center; (replaced with flex(box) in Body styles: .flex-row) */
 }
 .contact h2 {
     color: #fce138;
