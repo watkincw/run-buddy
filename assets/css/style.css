@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
+
+
 /* Body */
+
+
 
 body {
     color: #39a6b2;
@@ -14,8 +18,12 @@ body {
     display: flex;
 }
 
+
+
 /* Body end */
 /* Header */
+
+
 
 header {
     padding: 20px 35px;
@@ -56,8 +64,12 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+
+
 /* Header end */
 /* Hero style */
+
+
 
 .hero {
     background-image: url(../images/hero-bg.jpg);
@@ -122,8 +134,12 @@ header nav ul li a {
     font-size: 16px;
 }
 
+
+
 /* Hero style end */
 /* 'What We Do' style */
+
+
 
 /* .intro { (replaced with flex(box) in Body styles: .flex-row) 
     text-align: center;
@@ -148,26 +164,24 @@ header nav ul li a {
     text-align: center;
 }
 
+
+
 /* What We Do END */
 /* What You Do style */
+
+
 
 .steps {
     /* text-align: center; (replaced with flex(box) in Body styles: .flex-row) */
     background: #fce138;
 }
-
-/* Consolidated w/ .section-title + .secondary-border */
-/* .steps h2 {
+/* .steps h2 { (Consolidated w/ .section-title + .secondary-border)
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid #39a6b2;
 } */
-
-/* What You Do END */
-/* Consolidating What We Do & What You Do CSS */
-
 .section-title {
     font-size: 55px;
     color: #024e76;
@@ -186,32 +200,65 @@ header nav ul li a {
 .secondary-border {
     border-color: #39a6b2;
 }
-
-/* END Consolidation */
-/* What You Do Style */
-
-.steps div {
+/* .steps div { (replaced with flex(box) in .step)
     margin-bottom: 80px;
-}
-.steps img {
+} */
+/* .steps img { (replaced with flex(box) in .step)
     width: 15%;
     margin: 10px 0;
+} */
+.step { 
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    /* (the below attributes replaced vaious other .step selectors/attributes and made the content wrap more smoothly: .steps div, .steps img, .step:margin-top) */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
-.steps h3 {
+.step-info { 
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.step-img { 
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.step-img img { 
+    max-width: 100%;
+}
+.step-text { 
+    flex: 12;
+}
+.step h3 { /* (renamed from .steps h3 --> .step h3) */
     color: #024e76;
     font-size: 46px;
-    margin-top: 10px;
+    /* margin-top: 10px; (replaced with flex(box) in .step) */
+    flex: 1 30%;
 }
-.steps p {
+.steps-text p { /* (renamed .steps p --> .step-text p) */
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18px;
 }
-.steps span {
+.step-text h4 { 
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+/* .steps span { (REMOVED <span> elements from steps)
     font-size: 38px;
-}
+} */
 
-/* What You do style END */
+
+
+/* What You Do style END */
 /* Meet the Trainers style */
+
+
 
 /* .trainers { (replaced with flex(box) in Body styles: .flex-row)
     text-align: center;
@@ -252,8 +299,12 @@ header nav ul li a {
     line-height: 1.3;
 }
 
+
+
 /* 'Meet the Trainers' style END */
 /* 'reach out' style */
+
+
 
 .contact {
     background-color: #024e76;
@@ -288,8 +339,12 @@ header nav ul li a {
     color: #fce138;
 }
 
+
+
 /* 'reach out' style END */
 /* Footer */
+
+
 
 footer {
     background: #fce138;
@@ -318,4 +373,7 @@ section {
     padding: 60px;
 }
 
+
+
 /* Footer end */
+
